@@ -1,0 +1,28 @@
+{
+    DYNAMIC_CODE_GEN = YES; 
+    FILESTABLE = {
+        CLASSES = (FastMatch.m, LockFile.m, Modem.m, Port.m); 
+        FRAMEWORKS = (Foundation.framework); 
+        H_FILES = (
+            FastMatch.h, 
+            Fax.h, 
+            LockFile.h, 
+            Modem.h, 
+            ModemServerProtocol.h, 
+            Port.h, 
+            Voice.h
+        ); 
+        OTHER_LIBS = (termlib, termcap, rpcsvc); 
+        OTHER_LINKED = (jgetty_main.m); 
+        OTHER_SOURCES = (Makefile.preamble, Makefile, Makefile.postamble, m.template, h.template); 
+    }; 
+    LANGUAGE = English; 
+    LOCALIZABLE_FILES = {}; 
+    MAKEFILEDIR = "$(NEXT_ROOT)/NextDeveloper/Makefiles/pb_makefiles"; 
+    NEXTSTEP_BUILDTOOL = /bin/gnumake; 
+    PDO_UNIX_BUILDTOOL = $NEXT_ROOT/NextDeveloper/bin/make; 
+    PROJECTNAME = jgetty; 
+    PROJECTTYPE = Tool; 
+    PROJECTVERSION = 2.6; 
+    WINDOWS_BUILDTOOL = $NEXT_ROOT/NextDeveloper/Executables/make; 
+}
